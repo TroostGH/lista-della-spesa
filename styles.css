@@ -36,6 +36,12 @@
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
+/* Fa sì che l'attributo "hidden" abbia sempre la precedenza */
+[hidden] { display: none !important; }
+
+/* Nasconde la "x" nativa del campo di ricerca (usiamo la nostra) */
+input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+
 html, body {
   margin: 0;
   padding: 0;
