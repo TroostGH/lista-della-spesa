@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="Lista della spesa">
+  <rect width="100" height="100" rx="24" fill="#e7f5ee"/>
+  <path d="M50 48 C50 34 50 28 50 23" fill="none" stroke="#2f9e63" stroke-width="3" stroke-linecap="round"/>
+  <path d="M50 34 C43 33 38 27 38 20 C46 20 51 26 51 34 Z" fill="#3aa76d"/>
+  <path d="M50 38 C57 36 62 30 62 23 C54 23 49 29 49 37 Z" fill="#43b97c"/>
+  <rect x="27" y="46" width="46" height="8" rx="4" fill="#248050"/>
+  <path d="M31 54 H69 L64 78 H36 Z" fill="#2f9e63"/>
+  <g stroke="#bfe9d2" stroke-width="2.4" stroke-linecap="round">
+    <path d="M42 58 L40 74"/>
+    <path d="M50 58 L50 74"/>
+    <path d="M58 58 L60 74"/>
+  </g>
+</svg>
