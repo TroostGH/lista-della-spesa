@@ -1,5 +1,5 @@
 // Service worker — abilita l'uso offline (utile al supermercato)
-const CACHE = 'lista-spesa-v1';
+const CACHE = 'lista-spesa-v2';
 const ASSETS = [
   './', './index.html', './styles.css', './app.js',
   './catalog.js', './firebase-config.js', './manifest.json',
@@ -27,14 +27,13 @@ self.addEventListener('fetch', (e) => {
   // Lascia passare le richieste non-GET e quelle esterne (es. Firebase)
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
 
+  // Network-first: quando sei online prendi sempre la versione aggiornata
+  // e aggiorni la cache; offline usi l'ultima copia salvata.
   e.respondWith(
-    caches.match(e.request).then((cached) =>
-      cached ||
-      fetch(e.request).then((res) => {
-        const copy = res.clone();
-        caches.open(CACHE).then((c) => c.put(e.request, copy));
-        return res;
-      }).catch(() => caches.match('./index.html'))
-    )
+    fetch(e.request).then((res) => {
+      const copy = res.clone();
+      caches.open(CACHE).then((c) => c.put(e.request, copy));
+      return res;
+    }).catch(() => caches.match(e.request).then((cached) => cached || caches.match('./index.html')))
   );
 });
