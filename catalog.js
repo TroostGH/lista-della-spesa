@@ -98,6 +98,7 @@ const RAW = {
     ["Salsa di soia","🍶"], ["Tamari","🍶"], ["Senape","🌭"], ["Lievito alimentare","🌼"], ["Curry","🍛"],
     ["Paprika","🌶️"], ["Curcuma","🟡"], ["Cumino","🌿"], ["Origano","🌿"], ["Cannella","🟤"],
     ["Noce moscata","🌰"], ["Vaniglia","🌼"], ["Dado vegetale","🧊"], ["Brodo vegetale","🍲"], ["Capperi","🟢"],
+    ["Zafferano","🌺"],
   ],
   conserve: [
     ["Passata di pomodoro","🍅"], ["Polpa di pomodoro","🍅"], ["Pomodori pelati","🥫"], ["Concentrato di pomodoro","🍅"],
@@ -132,6 +133,11 @@ const RAW = {
     ["Carta da cucina","🧻"], ["Carta igienica","🧻"], ["Tovaglioli","🧻"], ["Sacchetti spazzatura","🗑️"],
     ["Sacchetti freezer","🧊"], ["Pellicola trasparente","📦"], ["Carta forno","📄"], ["Alluminio","📦"],
     ["Fiammiferi","🔥"], ["Pile","🔋"], ["Lampadine","💡"], ["Detersivo pavimenti","🧴"],
+    ["Tavoletta WC","🚽"], ["Detersivo WC","🚽"], ["Detergente bagno","🚿"], ["Scopino WC","🧽"],
+    ["Sale lavastoviglie","🧂"], ["Brillantante","✨"], ["Pastiglie lavastoviglie","🧽"],
+    ["Detergente vetri","🪟"], ["Sturalavandini","🚰"], ["Smacchiatore","🧴"], ["Detergente forno","🔥"],
+    ["Profumatore per ambienti","🌸"], ["Sapone liquido mani","🧼"], ["Guanti per pulizie","🧤"],
+    ["Panni in microfibra","🧽"],
   ],
   igiene: [
     ["Dentifricio","🪥"], ["Spazzolino","🪥"], ["Filo interdentale","🦷"], ["Collutorio","🧴"], ["Sapone","🧼"],

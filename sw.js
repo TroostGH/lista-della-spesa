@@ -1,5 +1,5 @@
 // Service worker — abilita l'uso offline (utile al supermercato)
-const CACHE = 'lista-spesa-v4';
+const CACHE = 'lista-spesa-v5';
 const ASSETS = [
   './', './index.html', './styles.css?v=2', './app.js?v=2',
   './catalog.js', './firebase-config.js', './manifest.json',
